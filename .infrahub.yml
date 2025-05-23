@@ -1,0 +1,31 @@
+---
+python_transforms:
+  - name: CustomWebhook
+    class_name: "CustomWebhook"
+    file_path: "transforms/custom_webhook.py"
+    convert_query_response: true
+
+queries:
+  - name: webhook_artifact
+    file_path: "transforms/webhook_artifact.gql"
+  - name: service_add_rack
+    file_path: "transforms/service_add_rack.gql"
+
+generator_definitions:
+  - name: service_add_rack
+    file_path: "generators/add_rack.py"
+    query: service_add_rack
+    targets: service_add_rack
+    class_name: AddRackGenerator
+    convert_query_response: true
+    parameters:
+      rack_id: "rack_id__value"
+      datacenter: "datacenter__name__value"
+
+objects:
+  - "objects/00_generator_group.yml"
+
+schemas:
+  - "schemas/dcim.yml"
+  - "schemas/services.yml"
+  - "schemas/organization.yml"

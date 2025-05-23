@@ -1,0 +1,16 @@
+---
+version: "1.0"
+nodes:
+  - name: Datacenter
+    namespace: Location
+    human_friendly_id:
+      - name__value
+    attributes:
+      - name: name
+        kind: Text
+        optional: false
+    relationships:
+      - name: racks
+        peer: InfraRack
+        cardinality: many
+        optional: true

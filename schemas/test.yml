@@ -1,0 +1,16 @@
+# yaml-language-server: $schema=https://schema.infrahub.app/infrahub/schema/latest.json
+---
+version: "1.0"
+nodes:
+  - name: Device
+    namespace: Infra
+    attributes:
+      # - name: custom_id
+      #   kind: NumberPool
+      - name: name
+        kind: Text
+        # optional: true
+        # read_only: true
+        # computed_attribute:
+        #   kind: Jinja2
+        #   jinja2_template: "device"
