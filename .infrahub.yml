@@ -1,0 +1,9 @@
+---
+python_transforms:
+  - name: CustomWebhook
+    class_name: "CustomWebhook"
+    file_path: "transforms/custom_webhook.py"
+
+queries:
+  - name: webhook_artifact
+    file_path: "transforms/webhook_artifact.gql"

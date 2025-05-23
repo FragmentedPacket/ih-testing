@@ -1,0 +1,11 @@
+query {
+    CoreArtifact {
+        edges {
+            node {
+                name {
+                    value
+                }
+            }
+        }
+    }
+}
