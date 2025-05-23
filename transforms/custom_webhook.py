@@ -6,4 +6,4 @@ class CustomWebhook(InfrahubTransform):
 
     async def transform(self, data):
         print(data)
-        return data
+        return {"branch_thang": data}
