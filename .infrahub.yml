@@ -3,6 +3,7 @@ python_transforms:
   - name: CustomWebhook
     class_name: "CustomWebhook"
     file_path: "transforms/custom_webhook.py"
+    convert_query_response: true
 
 queries:
   - name: webhook_artifact

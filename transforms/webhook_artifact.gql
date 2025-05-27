@@ -1,7 +1,9 @@
 query {
-    CoreArtifact {
+    NetworkGenericDevice {
         edges {
             node {
+                __typename
+                id
                 name {
                     value
                 }
