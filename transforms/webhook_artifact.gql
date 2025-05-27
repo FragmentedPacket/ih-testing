@@ -7,9 +7,6 @@ query {
                 name {
                     value
                 }
-                bad {
-                    value
-                }
             }
         }
     }
