@@ -8,3 +8,6 @@ python_transforms:
 queries:
   - name: webhook_artifact
     file_path: "transforms/webhook_artifact.gql"
+
+schemas:
+  - "schemas/test.yml"
