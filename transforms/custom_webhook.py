@@ -6,4 +6,4 @@ class CustomWebhook(InfrahubTransform):
 
     async def transform(self, data):
         print(data)
-        return {"data": data}
+        return {"datas": data}
