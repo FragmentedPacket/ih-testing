@@ -9,8 +9,8 @@ nodes:
       #   kind: NumberPool
       - name: name
         kind: Text
-        optional: true
-        read_only: true
-        computed_attribute:
-          kind: Jinja2
-          jinja2_template: "device{{ custom_id }}"
+        # optional: true
+        # read_only: true
+        # computed_attribute:
+        #   kind: Jinja2
+        #   jinja2_template: "device"
