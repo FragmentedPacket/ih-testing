@@ -1,0 +1,17 @@
+---
+version: "1.0"
+nodes:
+  - name: Rack
+    namespace: Infra
+    human_friendly_id:
+      - rack_id__value
+      - datacenter__name__value
+    attributes:
+      - name: rack_id
+        kind: Number
+        optional: false
+    relationships:
+      - name: datacenter
+        peer: LocationDatacenter
+        cardinality: one
+        optional: false
