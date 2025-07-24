@@ -1,0 +1,18 @@
+query ServiceAddRack($rack_id: BigInt!, $datacenter: String!) {
+    ServiceAddRack(rack_id__value: $rack_id, datacenter__name__value: $datacenter) {
+        edges {
+            node {
+                rack_id {
+                    value
+                }
+                datacenter {
+                    node {
+                        name {
+                            value
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
