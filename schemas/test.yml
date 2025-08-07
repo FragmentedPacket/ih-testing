@@ -5,8 +5,8 @@ nodes:
   - name: Device
     namespace: Infra
     attributes:
-      # - name: custom_id
-      #   kind: NumberPool
+      - name: custom_id
+        kind: Number
       - name: name
         kind: Text
         # optional: true
