@@ -4,10 +4,20 @@
 #     class_name: "CustomWebhook"
 #     file_path: "transforms/custom_webhook.py"
 #     convert_query_response: true
+check_definitions:
+  - name: "check_color_tags_name"
+    class_name: "ColorTagsCheck"
+    file_path: "checks/tags_check/tags_check.py"
+    targets: "ColorTags"
+    parameters:
+      tag_name: "name__value"
+      tag_desc: "description__value"
 
 queries:
   # - name: webhook_artifact
   #   file_path: "transforms/webhook_artifact.gql"
+  - name: tags_check
+    file_path: "checks/tags_check/tags_check.gql"
   - name: service_add_rack
     file_path: "transforms/service_add_rack.gql"
 
