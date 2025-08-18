@@ -2,6 +2,9 @@ query TagsQuery($tag_name: String!) {
   BuiltinTag(name__value: $tag_name) {
     edges {
       node {
+        name {
+          value
+        }
         description {
           value
         }
